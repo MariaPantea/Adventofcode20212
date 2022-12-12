@@ -21,8 +21,8 @@ def read_input_as_doc(filename):
         return f.read()
 
 
-def read_input_as_matrix(filename):
-    return np.array([[int(x) for x in y] for y in read_input(filename)])
+def read_input_as_char_matrix(filename):
+    return np.array([[ord(x) for x in y] for y in read_input(filename)])
 
 
 def flatten(ls):
